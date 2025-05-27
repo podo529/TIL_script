@@ -24,11 +24,91 @@ thumbNailA[0].addEventListener('click', function(){
 });
 thumbNailA[1].addEventListener('click', function(){
     console.log(this);
-    console.log(this.children[1].src);
+    console.log(this.children[0].src);
     popupShow();
-    popupBg.children[0].children[0].src = this.children[1].src;
+    popupBg.children[0].children[0].src = this.children[0].src;
 });
-thumbNailA[2].addEventListener('click', popupShow);
+thumbNailA[2].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[3].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[4].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[5].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[6].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[7].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[8].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[9].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[10].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[11].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[12].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[13].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[14].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[15].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[16].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[17].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[18].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[19].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[20].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+thumbNailA[21].addEventListener('click', function(){
+    popupShow();
+    popupBg.children[0].children[0].src = this.children[0].src;
+});
+
 function popupShow(){
     return popupBg.style.display = 'flex';
 }
