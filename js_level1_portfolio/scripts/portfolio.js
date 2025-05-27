@@ -19,98 +19,79 @@ thumbNailA[0].addEventListener('click', function(){
     console.log(this);//이벤트객체 자동인식하는지 확인
     console.log(this.children[0].src);
     console.log(popupBg.children[0].children[0].src);//팝업bg의 자식의 자식의 src확인
-    popupShow(); //팝업 출력 함수 호출
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[1].addEventListener('click', function(){
-    console.log(this);
-    console.log(this.children[0].src);
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[2].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[3].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[4].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[5].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[6].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[7].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[8].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[9].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[10].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[11].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[12].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[13].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[14].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[15].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[16].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[17].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[18].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[19].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[20].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 thumbNailA[21].addEventListener('click', function(){
-    popupShow();
-    popupBg.children[0].children[0].src = this.children[0].src;
+    popupShow(this); //팝업 출력 함수 호출
 });
 
-function popupShow(){
-    return popupBg.style.display = 'flex';
+
+function popupShow(target){
+    //console.log('--------------------------함수시작위치와 에러체크')
+    //console.log(this.children[0]);
+    popupBg.style.display = 'flex';
+    popupBg.children[0].children[0].src = target.children[0].src;
+    return; //함수 종료
 }
 // 3. (팝업 실행 기준) 배경클릭 시(popup_bg) 팝업 숨기기
 popupBg.addEventListener('click', popupHide);
