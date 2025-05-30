@@ -41,11 +41,11 @@ main section .right_order > .price em {}
 main section .right_order .benefit_delivery {overflow:hidden;}
 main section .right_order .benefit_delivery dt {
     width:80px; background:pink;
-    float:left;
+    float:left; margin-bottom:5px;
 }
 main section .right_order .benefit_delivery dd {
     width:calc(100% - 80px); background:aqua;
-    float:right;
+    float:right;  margin-bottom:5px;
 }
 main section .right_order .benefit_delivery dd em {}
 main section .right_order .product_option {
@@ -62,20 +62,25 @@ main section .right_order .product_option select[name=color] {}
 main section .right_order .product_option select[name=color] option {}
 main section .right_order .product_option select[name=size] {}
 main section .right_order .product_option select[name=size] option {}
-main section .right_order .order_select {background:#fff;}
-main section .right_order .order_select .list {}
+main section .right_order .order_select {
+    background:#fff; padding:10px; position:relative;
+}
+main section .right_order .order_select .list {margin-bottom:20px;}
 main section .right_order .order_select .list em {}
-main section .right_order .order_select .close {}
-main section .right_order .order_select .order_num {}
+main section .right_order .order_select .close {position:absolute; right:10px; top:10px;}
+main section .right_order .order_select .order_num {
+    border:1px solid #aaa;
+    display:inline;
+}
 main section .right_order .order_select .order_num #minus {}
-main section .right_order .order_select .order_num input {}
+main section .right_order .order_select .order_num input {width:40px;}
 main section .right_order .order_select .order_num #plus {}
-main section .right_order .order_select > .price {}
-main section .right_order .total {}
+main section .right_order .order_select > .price {position:absolute; right:10px; bottom:10px;}
+main section .right_order .total {display:flex; justify-content:space-between;}
 main section .right_order .total p {}
 main section .right_order .total .price {}
 main section .right_order .total .price em {}
-main section .right_order .btn_group {display:flex; justify-content:space-between;}
+main section .right_order .btn_group {display:flex; justify-content:space-between; padding:10px 0;}
 main section .right_order .btn_group * {
     line-height:57px; width:165.5px;
     border:1px solid #59afff;
