@@ -1,26 +1,19 @@
 /* css */
-main {text-align:center;}
-main .info {
+main {
+    text-align:center;
     margin : 0 auto;
     background:url(https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center 0 / 1100px auto;
     max-width:420px; min-width:320px; height:100vh;
     padding: 200px 20px;
 }
-main .info .birthday {
-    padding: 0 50px;
+main .data {padding: 0 50px;
     display:grid; grid-template-columns:100px 100px 100px;
     gap : 5px;
-    margin-bottom:40px;
-}
-main .info .birthday li {}
-main .info .birthday li input {width:70px;}
-main .info .birthday li span {color:#fff;}
-main .info .question {
-    color:#fff; padding:15px 0; margin-bottom:40px; width:100%;
+    margin-bottom:40px;}
+main .data input {width:70px;}
+main .data input span {color:#fff;}
+main #result_btn {color:#fff; padding:15px 0; margin-bottom:40px; width:100%;
     background-color:rgba(255,50,50,0.6);
-    border-radius:10px;
-}
-main .info .result {
-    padding:20px 0; width:100%;
-    background-color:rgba(255,255,255,0.5);
-}
+    border-radius:10px;}
+main .result {padding:20px 0; width:100%;
+    background-color:rgba(255,255,255,0.5);}
