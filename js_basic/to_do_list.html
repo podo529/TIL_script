@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 할일</title>
+    <link rel="stylesheet" href="../js_level1_portfolio/styles/reset.css">
+    <style>
+        body {text-align:center;}
+        main {
+            height:100vh; background:url(https://i.pinimg.com/736x/8d/b0/b8/8db0b8d214d49450d9967d2c3fd4d455.jpg) no-repeat;
+            background-position:50% 20%;
+            padding:80px;
+        }
+        main h1 {
+            font-size:3rem; font-weight:600; color:#a02cff;
+            margin-bottom:30px;
+        }
+        main ul {height:80%; overflow-y:auto; padding-left:100px; text-align:left;}
+        main ul li {margin:30px 0;}
+        main ul li span {
+            margin-right:10px;
+
+        }
+        main ul li .del_btn {
+            background-color:#eee; color:#a02cf2; padding:3px 6px;
+            border-radius:5px;
+        }
+        main .input_btn {}
+        main .input_btn .to {border:1px solid #a02cf2; padding:5px 10px; border-radius:5px;}
+        main .input_btn #to_btn {
+            color:#a02cf2; border:1px solid #a02cf2;
+            padding:7px 15px; border-radius:10px;
+        }
+        main .input_btn #to_btn:hover {color:#fff; background-color:#a02cf2;}
+    </style>
+    <script src="./scripts/to_do_list.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>오늘의 할일</h1>
+        <ul>
+            <li><span>여기에 할 일이 등록됩니다.</span><button type="button" class="del_btn">X</button></li>
+        </ul>
+        <div class="input_btn">
+            <input type="text" class="to" name="to" placeholder="할일을 입력하세요">
+            <button type="button" id="to_btn">등록</button>
+        </div> 
+    </main>
+</body>
+</html>
