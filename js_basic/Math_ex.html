@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../js_level1_portfolio/styles/reset.css">
+    <style>
+        body {text-align:center;}
+        main {
+            height:100vh;
+            background:url(https://i.pinimg.com/736x/e7/46/f3/e746f318927999588f66190adc1269da.jpg) no-repeat center;
+            padding-top:50px;
+            display:flex; flex-flow:column nowrap;
+        }
+        main h1 {
+            font-size:3rem; font-weight:700;
+            margin:0 auto;
+            width:max-content;
+            background:linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            color:transparent;
+            background-clip:text;
+        }
+        main span {margin-top:30px;}
+        main #meetdate {width:150px; padding:10px 10px; margin:15px auto; border-radius:5px;}
+        main #meet_btn {
+            background-color:#000; color:#fff;
+            padding:12px 10px; width:150px; margin:0 auto;
+            border-radius:5px;
+        }
+        main #meet_btn:hover {background:linear-gradient(90deg,rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);}
+        main .result {
+            margin:50px auto; background:rgba(255,255,255,0.5);
+            padding:50px 100px; width:550px; height:250px;
+            border-radius:10px;
+        }
+        main .result .date {margin-bottom:20px;}
+        main .result .time {line-height:150%;}
+        main .result * em {font-size:1.75rem; font-weight:600; color:#ff03ff;}
+    </style>
+    <script src="./scripts/Math_ex.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>반려동물 만남 디데이</h1>
+        <span>운명적인 만남의 날을 선택하세요</span>
+        <input type="date" id="meetdate" name="meetdate">
+        <button type="button" id="meet_btn">계산</button>
+        <div class="result">
+            <p class="date">D + <em></em></p>
+            <p class="time">만나온 시간 : <br><em></em></p>
+        </div>
+    </main>
+</body>
+</html>
