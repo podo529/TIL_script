@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>swiper-direction1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {margin:0; padding:0; line-height:1.0; box-sizing:border-box;}
+        .swiper {width:1000px; height:40px; background:#ddd;}
+        .swiper .swiper-wrapper {}
+        .swiper .swiper-wrapper .swiper-slide {background:#FF0;}
+        .swiper .swiper-wrapper .slide1 {}
+        .swiper .swiper-wrapper .slide2 {}
+        .swiper .swiper-wrapper .slide3 {}
+        .swiper .swiper-wrapper .slide4 {}
+    </style>
+</head>
+<body>
+    <div class="swiper" id="news">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><a href="#">[공식] BTS 슈가, 50억 기부…세브란스 손잡고 '민윤기 치료센터' 설립</a></div>
+            <div class="swiper-slide slide2"><a href="#">“또 한국이 훔쳤다” 글로벌 1위 ‘케이팝 데몬헌터스’에 중국 누리꾼 트집</a></div>
+            <div class="swiper-slide slide3"><a href="#">[속보] 법원 '불법 정치자금' 송영길, 보석 인용</a></div>
+            <div class="swiper-slide slide4"><a href="#">핵시설 피해 얼마나?... 하메네이 "응징당할 것"</a></div>
+        </div>
+    </div>
+    <script>
+        const newSwiper = new Swiper('#news',{
+            effect:'fade',
+            autoplay:{delay:2000},
+            loop:'ture',
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
